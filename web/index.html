@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#0e1016">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg">
+<title>Stream Deck DIY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+<div id="app">
+  <header id="topbar">
+    <button id="clockBtn" class="clock-small" aria-label="Horloge">--:--</button>
+    <div id="pageTitle"></div>
+    <div id="vol"><div id="volBar"><div id="volFill"></div></div><span id="volPct"></span></div>
+    <button id="gearBtn" class="icon-btn" aria-label="Paramètres"></button>
+  </header>
+  <main id="deck"><div id="grid"></div></main>
+  <nav id="dots"></nav>
+  <button id="fabGear" class="icon-btn" aria-label="Paramètres"></button>
+</div>
+
+<div id="bigclock" hidden>
+  <div id="bigTime">--:--</div>
+  <div id="bigSec"></div>
+  <div id="bigDate"></div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast"></div>
+
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Config locale (contient ton code PIN et tes chemins)
+config.json
+config.*.bak
+config.tmp
+icons_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Système / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
